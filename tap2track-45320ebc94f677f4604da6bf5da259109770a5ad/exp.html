@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Arithmetic Operations</h2>
+    <p>Click a button to perform the operation</p>
+    
+    <button id="addBtn">Addition (+)</button>
+    <button id="subBtn">Subtraction (-)</button>
+    <button id="mulBtn">Multiplication (×)</button>
+
+    <p id="result">Result: </p>
+
+    <script>
+        document.getElementById("addBtn").addEventListener('click', function () {
+            var num1 = parseFloat(prompt("Enter first number:"));
+            var num2 = parseFloat(prompt("Enter second number:"));
+            var result = num1 + num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        });
+
+        document.getElementById("subBtn").addEventListener('click', function () {
+            var num1 = parseFloat(prompt("Enter first number:"));
+            var num2 = parseFloat(prompt("Enter second number:"));
+            var result = num1 - num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        });
+
+        document.getElementById("mulBtn").addEventListener('click', function () {
+            var num1 = parseFloat(prompt("Enter first number:"));
+            var num2 = parseFloat(prompt("Enter second number:"));
+            var result = num1 * num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        });
+    </script>
+</body>
+
+</html>
